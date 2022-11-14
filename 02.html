@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Este es el título primooooo</h1>
+    <button class="upperbutton">Poner en mayúsculas el título</button>
+    <br>
+    <br>
+    <br>
+    <button class="redbutton">Poner en rojo el título</button>
+    <button class="redbutton">Poner en rojo el título1</button>
+    <button class="redbutton">Poner en rojo el título2</button>
+    <button class="redbutton">Poner en rojo el título3</button>
+    <button class="redbutton">Poner en rojo el título4</button>
+
+
+    <script>
+
+        const upperButton = document.querySelector('.upperbutton')
+        const title = document.querySelector('h1')
+
+        upperButton.onclick = () => {
+
+            title.style.textTransform = 'uppercase'
+        }
+
+        document.onclick = () => {
+            console.log('HE PINCHADO EN EL COCUMENT');
+        }
+
+
+        const redButtons = document.querySelectorAll('.redbutton')
+
+        redButtons.forEach(eachButton => {
+
+            eachButton.onclick = () => {
+
+                // console.log('ESTOY DENTRO DEL BOTÓN', eachButton.textContent);  YO NO ARRIESGO
+                // title.style.color = 'red'
+
+                if (title.style.color === 'red'){
+                    title.style.color = 'blue'
+                } else {
+                    title.style.color = 'red'
+
+                }
+
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>

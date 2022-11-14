@@ -1,7 +1,3 @@
-/* 1º CREAR UNA LISTA DE ELEMENTOS BOTÓN QUE CAMBIE EL color 2º 5 ELEMENTOS DE
-LA LISTA, 5 BOTONES QUE CADA UNO HAGA ALGO DIFERENTE 3º DESAHACER Y DEJARLO COMO
-ESTABA AL INICIO */
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,18 +6,37 @@ ESTABA AL INICIO */
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
-    <h1 id="title1" class="clase-inicial-primera clase-inicial-segunda">
-      Contenido <span>inicial</span>
-    </h1>
-    <h2 id="title2">Contenido secundario</h2>
+    <!--  1º CREAR UNA LISTA DE ELEMENTOS BOTÓN QUE CAMBIE EL color 
+    2º 5 ELEMENTOS
+    DE LA LISTA, 5 BOTONES QUE CADA UNO HAGA ALGO DIFERENTE 
+    3º DESAHACER Y DEJARLO COMO ESTABA AL INICIO  -->
 
-    <p class="paragraph">Soy el primer párrafo</p>
-    <p class="paragraph">Soy el segundo párrafo</p>
-    <p class="paragraph">Soy un párrafo</p>
+    <h1>LISTA ORDENADA</h1>
 
-    <h5 class="subtitle">Soy un subtítulo</h5>
+    <ol class="orderList">
+      <li class="element1">Esto es un elemento de lista Elemento 1</li>
+      <li class="element2">Esto es un elemento de lista Elemento 2</li>
+      <li class="element3">Esto es un elemento de lista Elemento 3</li>
+      <li class="element4">Esto es un elemento de lista Elemento 4</li>
+      <li class="element5">Esto es un elemento de lista Elemento 5</li>
+    </ol>
 
-    <script src=""></script>
+    <button class="changeColor">CAMBIO DE COLOR</button>
+    <br />
+    <button class="button1">CAMBIAR A MAYUS</button>
+    <br />
+    <button class="button2">CAMBIAR FONDO</button>
+    <br />
+    <button class="button3">PONER CURSIVA</button>
+    <br />
+    <button class="button4">CAMBIAR TIPOGRAFÍA</button>
+    <br />
+    <button class="button5">CAMBIAR A MINUSCULAS</button>
+    <br />
+    <button class="button0">RESTAURAR</button>
+
+    <script src="./00.js"></script>
   </body>
 </html>
